@@ -53,11 +53,11 @@ public class PlayerJumper : MonoBehaviour
 
     void FixedUpdate()
     {
-        // --- 1. MOVIMIENTO LATERAL ---
+        // 1. MOVIMIENTO LATERAL 
         float inclinacionX = Input.gyro.gravity.x;
         rb.linearVelocity = new Vector3(inclinacionX * Movimientox, rb.linearVelocity.y, rb.linearVelocity.z);
 
-        // --- 2. GRAVEDAD PERSONALIZADA ---
+        //2. GRAVEDAD PERSONALIZADA
         float gravedadAAplicar = gravedadBase;
         if (rb.linearVelocity.y < 0.1f) 
         {
@@ -65,7 +65,7 @@ public class PlayerJumper : MonoBehaviour
         }
         rb.AddForce(Vector3.up * gravedadAAplicar, ForceMode.Acceleration);
 
-        // --- 3. DETECCIÓN ACTIVA DE PLATAFORMAS ---
+    //DETECCIÓN ACTIVA DE PLATAFORMAS
         ConfigurarDetecciónAbajo();
     }
 
@@ -84,7 +84,7 @@ public class PlayerJumper : MonoBehaviour
         // Dibujamos el rayo en el editor para que puedas calibrar la distancia visualmente
         Debug.DrawRay(origenRayo, Vector3.down * distanciaRayo, Color.red);
 
-        // Si el rayo impacta algo en la capa de las plataformas...
+        // Si el rayo impacta algo en la capa de las plataformas
         if (Physics.Raycast(origenRayo, Vector3.down, out hit, distanciaRayo, capaPlataformas))
         {
             OneWayPlatform plataforma = hit.collider.GetComponent<OneWayPlatform>();
