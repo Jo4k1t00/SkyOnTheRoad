@@ -57,8 +57,7 @@ public class PlatformManager : MonoBehaviour
         float siguienteY = ultimaYGenerada + Random.Range(espacioMinY, espacioMaxY);
         float randomX = Random.Range(minX, maxX);
         Vector3 posicionSpawn = new Vector3(randomX, siguienteY, playerTransform.position.z);
-
-        // --- CÁLCULO DE DIFICULTAD ---
+        
         // 't' será un valor entre 0 y 1 dependiendo de qué tan alto hayamos llegado
         float t = Mathf.Clamp01(siguienteY / alturaDificultadMaxima);
         
@@ -71,10 +70,10 @@ public class PlatformManager : MonoBehaviour
         bool coinActive = Random.value > 0.5f; // 50% de probabilidad
          if(coinActive)
         {
-            // 1. Calculamos una nueva posición un poco más arriba
+            // Calculamos una nueva posición un poco más arriba
              Vector3 posicionMoneda = new Vector3(posicionSpawn.x, posicionSpawn.y + coinOffsetY, posicionSpawn.z);
     
-             // 2. Instanciamos la moneda en la nueva posición
+             // Instanciamos la moneda en la nueva posición
             GameObject moneda = Instantiate(coinPrefab, posicionMoneda, Quaternion.identity);
  
         }
