@@ -18,8 +18,11 @@ Unity 6000.0.72f1 (esto si quieres revisarlo desde el proyecto creado, si quiere
 Me encargue de llevar la idea a lo largo del proyecto de nota de mi ramo de videojuegos móviles de la universidad Bernardo O'higgins, un trabajo individual el cual consistia en la utilizacion de las herramientas dispuestas que nos dio el profesor, el cual hice:
 - Programacion
 - Modelado del personaje
+
 <img width="1587" height="623" alt="Jumperin" src="https://github.com/user-attachments/assets/86ba55dd-6e15-4caf-9dc4-a477643321dc" />
+
 <img width="273" height="492" alt="Enfoque" src="https://github.com/user-attachments/assets/402c5aae-ec8a-4c66-bc3c-cd9405778f24" />
+
 - Diseño de nivel
 - Sonidos
 
