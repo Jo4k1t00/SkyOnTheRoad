@@ -1,6 +1,8 @@
 # CodigosJumper
 Trabajo de proyecto movil
+
 <img width="692" height="388" alt="GIFMobileGame" src="https://github.com/user-attachments/assets/894ec5a2-a147-4dbb-8c3e-8a5ebeefc11a" />
+
 Una frase: Gameplay interactivo del juego mobile, con el movimiento del telefono controlas al jugador para poder saltar entre plataformas y llegar mas alto, buscando mantenerte concentrado y ser preciso con los saltos y no caerte para perder.
 
 ## Como Jugar
