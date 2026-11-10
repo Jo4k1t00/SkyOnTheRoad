@@ -14,7 +14,7 @@ Se requiere un dispositivo móvil que cuente con un sensor de giroscopio integra
 ## Requisitos e instalación
 Unity 6000.0.72f1 (esto si quieres revisarlo desde el proyecto creado, si quieres jugarlo vuelve al APK)
 
-## Mi aporte
+## Mi Experiencia y aporte
 Me encargue de llevar la idea a lo largo del proyecto de nota de mi ramo de videojuegos móviles de la universidad Bernardo O'higgins, un trabajo individual el cual consistia en la utilizacion de las herramientas dispuestas que nos dio el profesor, el cual hice:
 
 ### Programación
@@ -34,6 +34,10 @@ Programe cada seccion de las interacciones, entre ellas estan coleccion, control
 ##### PausarJuego (reproduce el sonido y genera el panel de pausa)
 
 <img width="616" height="401" alt="image" src="https://github.com/user-attachments/assets/acf213c4-ef29-4dc0-9c51-70868abbd338" />
+
+##### FakePlayerTarget (jugador señuelo para utilizar las nubes)
+
+<img width="523" height="218" alt="image" src="https://github.com/user-attachments/assets/ab667a7b-c5eb-4403-b118-eb8248d7ec0a" />
 
 #### Nubes de fondo 
 
@@ -99,12 +103,105 @@ Programe cada seccion de las interacciones, entre ellas estan coleccion, control
 
 <img width="582" height="702" alt="image" src="https://github.com/user-attachments/assets/b5988197-6411-40bd-a786-88c92604f791" />
 
-### Modelado del personaje
+
+### Montaje de unity
+
+Después de todo este código hay que compilar todo lo codificado en cada sección de la jerarquia
+
+<img width="342" height="432" alt="image" src="https://github.com/user-attachments/assets/9aec0246-7769-4194-b3aa-1e6fad9e3361" />
+
+#### Plataformas
+
+##### PlatformManager
+
+<img width="472" height="543" alt="image" src="https://github.com/user-attachments/assets/09bb7201-f85e-4445-be01-5e494c5ee21e" />
+
+<img width="251" height="20" alt="image" src="https://github.com/user-attachments/assets/398292d3-26e3-4aec-bf22-3b50343159d2" />
+
+#### OneWayPlatform 
+
+<img width="470" height="132" alt="image" src="https://github.com/user-attachments/assets/5decf32a-397b-4407-99ca-d082d04cb349" />
+
+#### Player
+
+Se necesito de un sistema de partículas, el personaje y su animacion
+
+##### Orden
+
+<img width="482" height="321" alt="image" src="https://github.com/user-attachments/assets/05773d04-39a9-4154-83e9-3f8be1ad5750" />
+
+##### Configuración del script Jugador dentro
+
+<img width="457" height="605" alt="image" src="https://github.com/user-attachments/assets/97eecd2b-b47e-459b-ac7a-d775b60c2e54" />
+
+##### Animacion
+
+<img width="1206" height="357" alt="image" src="https://github.com/user-attachments/assets/8d97c04e-c038-48cf-b0b3-80bf067e69f2" />
+
+#### Puntaje
+
+##### ScoreManager
+
+<img width="476" height="152" alt="image" src="https://github.com/user-attachments/assets/3f8e0f63-462f-47de-a685-1fcbd972df4f" />
+
+##### Monedas
+
+<img width="471" height="736" alt="image" src="https://github.com/user-attachments/assets/ba560a55-4092-4745-bb47-ee9bd471049f" />
+
+##### GameManager
+
+<img width="475" height="142" alt="image" src="https://github.com/user-attachments/assets/5a0ca970-2521-43db-829c-7ddc6c5365f2" />
+
+#### Menú
+
+##### Pausa
+
+<img width="461" height="192" alt="image" src="https://github.com/user-attachments/assets/3eb62d7c-5cc7-4f29-a6db-27ea36a3b1d2" />
+
+##### MenuManager
+
+<img width="461" height="170" alt="image" src="https://github.com/user-attachments/assets/a3706c20-e16d-493a-ba8e-1bf91bb789b8" />
+
+#### Nubes
+
+##### Gestor de nube (CloudManager In-Game)
+
+<img width="476" height="416" alt="image" src="https://github.com/user-attachments/assets/8a0a41d7-8a08-4a68-a5ff-2d5111699091" />
+
+##### Gestor de nube (CloudManager Menu)
+
+<img width="475" height="417" alt="image" src="https://github.com/user-attachments/assets/be2bf789-2477-4750-867c-0035ed62815a" />
+
+#### Cámara en Y
+
+<img width="457" height="215" alt="image" src="https://github.com/user-attachments/assets/dbd8080c-35e4-429d-ae16-61ecc3e95011" />
+
+#### Implementacion de botones (especificar cada boton con su interaccion especifica)
+
+<img width="442" height="140" alt="image" src="https://github.com/user-attachments/assets/fb135c38-8dea-4f1d-91a3-60d2ec4a6175" />
+
+<img width="450" height="130" alt="image" src="https://github.com/user-attachments/assets/74114f89-61e5-4bb6-b412-ef367bdd4b2b" />
+
+<img width="443" height="135" alt="image" src="https://github.com/user-attachments/assets/d048f738-1c2b-47df-bf99-a18d4953855c" />
+
+<img width="442" height="133" alt="image" src="https://github.com/user-attachments/assets/3d6c1d0d-46c6-472b-b676-0f3a2d1e5f55" />
+
+<img width="445" height="141" alt="image" src="https://github.com/user-attachments/assets/eccb2d3a-8330-4e8d-ab97-57c4b96ad269" />
+
+### Modelado del personaje (Tim)
+
+Modele al personaje y configure sus huesos para animar su salto y sistema de caida.
 
 #### Personaje (Personaje modelado y construido por huesos para animacion)
+
 <img width="1587" height="623" alt="Jumperin" src="https://github.com/user-attachments/assets/86ba55dd-6e15-4caf-9dc4-a477643321dc" />
 
 <img width="273" height="492" alt="Enfoque" src="https://github.com/user-attachments/assets/402c5aae-ec8a-4c66-bc3c-cd9405778f24" />
 
 <img width="465" height="516" alt="Captura de pantalla 2026-07-21 010624" src="https://github.com/user-attachments/assets/f933f2b4-ac10-445a-9d5c-fb2e41cd96b2" />
 
+#### Moneda (Modelo de moneda)
+
+<img width="517" height="617" alt="image" src="https://github.com/user-attachments/assets/b3e16dbe-2da1-4a38-8c8b-40bd67707f97" />
+
+<img width="512" height="577" alt="image" src="https://github.com/user-attachments/assets/f0e1f3ec-db6e-43e0-85b4-7711740ce95f" />
